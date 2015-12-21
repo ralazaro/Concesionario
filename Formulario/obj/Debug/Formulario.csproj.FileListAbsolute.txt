@@ -1,0 +1,59 @@
+C:\Users\user\Documents\Visual Studio 2013\Projects\SolucionConcesionario\Formulario\obj\Debug\Formulario.Form1.resources
+C:\Users\user\Documents\Visual Studio 2013\Projects\SolucionConcesionario\Formulario\obj\Debug\Formulario.Properties.Resources.resources
+C:\Users\user\Documents\Visual Studio 2013\Projects\SolucionConcesionario\Formulario\obj\Debug\Formulario.csproj.GenerateResource.Cache
+C:\Users\user\Documents\Visual Studio 2013\Projects\SolucionConcesionario\Formulario\obj\Debug\Formulario.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2013\Projects\SolucionConcesionario\Formulario\bin\Debug\Formulario.exe.config
+C:\Users\user\Documents\Visual Studio 2013\Projects\SolucionConcesionario\Formulario\bin\Debug\Formulario.exe
+C:\Users\user\Documents\Visual Studio 2013\Projects\SolucionConcesionario\Formulario\bin\Debug\Formulario.pdb
+C:\Users\user\Documents\Visual Studio 2013\Projects\SolucionConcesionario\Formulario\bin\Debug\Contracts.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\SolucionConcesionario\Formulario\bin\Debug\DataLayer.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\SolucionConcesionario\Formulario\bin\Debug\DomainModel.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\SolucionConcesionario\Formulario\bin\Debug\Services.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\SolucionConcesionario\Formulario\bin\Debug\Contracts.pdb
+C:\Users\user\Documents\Visual Studio 2013\Projects\SolucionConcesionario\Formulario\bin\Debug\DataLayer.pdb
+C:\Users\user\Documents\Visual Studio 2013\Projects\SolucionConcesionario\Formulario\bin\Debug\DomainModel.pdb
+C:\Users\user\Documents\Visual Studio 2013\Projects\SolucionConcesionario\Formulario\bin\Debug\Services.pdb
+C:\Users\user\Documents\Visual Studio 2013\Projects\SolucionConcesionario\Formulario\obj\Debug\Formulario.exe
+C:\Users\user\Documents\Visual Studio 2013\Projects\SolucionConcesionario\Formulario\obj\Debug\Formulario.pdb
+C:\master TI\TEMARIO\2ª PARTE\Plataforma para el desarrollo de software\practicas\SolucionConcesionario\Formulario\bin\Debug\Formulario.exe.config
+C:\master TI\TEMARIO\2ª PARTE\Plataforma para el desarrollo de software\practicas\SolucionConcesionario\Formulario\obj\Debug\Formulario.exe
+C:\master TI\TEMARIO\2ª PARTE\Plataforma para el desarrollo de software\practicas\SolucionConcesionario\Formulario\obj\Debug\Formulario.pdb
+C:\master TI\TEMARIO\2ª PARTE\Plataforma para el desarrollo de software\practicas\SolucionConcesionario\Formulario\bin\Debug\Formulario.exe
+C:\master TI\TEMARIO\2ª PARTE\Plataforma para el desarrollo de software\practicas\SolucionConcesionario\Formulario\bin\Debug\Formulario.pdb
+C:\master TI\TEMARIO\2ª PARTE\Plataforma para el desarrollo de software\practicas\SolucionConcesionario\Formulario\bin\Debug\Contracts.dll
+C:\master TI\TEMARIO\2ª PARTE\Plataforma para el desarrollo de software\practicas\SolucionConcesionario\Formulario\bin\Debug\DataLayer.dll
+C:\master TI\TEMARIO\2ª PARTE\Plataforma para el desarrollo de software\practicas\SolucionConcesionario\Formulario\bin\Debug\DomainModel.dll
+C:\master TI\TEMARIO\2ª PARTE\Plataforma para el desarrollo de software\practicas\SolucionConcesionario\Formulario\bin\Debug\Services.dll
+C:\master TI\TEMARIO\2ª PARTE\Plataforma para el desarrollo de software\practicas\SolucionConcesionario\Formulario\bin\Debug\Contracts.pdb
+C:\master TI\TEMARIO\2ª PARTE\Plataforma para el desarrollo de software\practicas\SolucionConcesionario\Formulario\bin\Debug\DataLayer.pdb
+C:\master TI\TEMARIO\2ª PARTE\Plataforma para el desarrollo de software\practicas\SolucionConcesionario\Formulario\bin\Debug\DomainModel.pdb
+C:\master TI\TEMARIO\2ª PARTE\Plataforma para el desarrollo de software\practicas\SolucionConcesionario\Formulario\bin\Debug\Services.pdb
+C:\master TI\TEMARIO\2ª PARTE\Plataforma para el desarrollo de software\practicas\SolucionConcesionario\Formulario\obj\Debug\Formulario.csprojResolveAssemblyReference.cache
+C:\master TI\TEMARIO\2ª PARTE\Plataforma para el desarrollo de software\practicas\SolucionConcesionario\Formulario\obj\Debug\Formulario.Properties.Resources.resources
+C:\master TI\TEMARIO\2ª PARTE\Plataforma para el desarrollo de software\practicas\SolucionConcesionario\Formulario\obj\Debug\Formulario.csproj.GenerateResource.Cache
+C:\master TI\TEMARIO\2ª PARTE\Plataforma para el desarrollo de software\practicas\SolucionConcesionario\Formulario\obj\Debug\Formulario.ClienteAlta.resources
+C:\master TI\TEMARIO\2ª PARTE\Plataforma para el desarrollo de software\practicas\SolucionConcesionario\Formulario\obj\Debug\Formulario.Inicio.resources
+C:\PROYECTO FIN DE GRADO2013\Downloads\SolucionConcesionarioAsier\Formulario\bin\Debug\Formulario.exe.config
+C:\PROYECTO FIN DE GRADO2013\Downloads\SolucionConcesionarioAsier\Formulario\bin\Debug\Formulario.exe
+C:\PROYECTO FIN DE GRADO2013\Downloads\SolucionConcesionarioAsier\Formulario\bin\Debug\Formulario.pdb
+C:\PROYECTO FIN DE GRADO2013\Downloads\SolucionConcesionarioAsier\Formulario\bin\Debug\Contracts.dll
+C:\PROYECTO FIN DE GRADO2013\Downloads\SolucionConcesionarioAsier\Formulario\bin\Debug\DataLayer.dll
+C:\PROYECTO FIN DE GRADO2013\Downloads\SolucionConcesionarioAsier\Formulario\bin\Debug\DomainModel.dll
+C:\PROYECTO FIN DE GRADO2013\Downloads\SolucionConcesionarioAsier\Formulario\bin\Debug\Services.dll
+C:\PROYECTO FIN DE GRADO2013\Downloads\SolucionConcesionarioAsier\Formulario\bin\Debug\Contracts.pdb
+C:\PROYECTO FIN DE GRADO2013\Downloads\SolucionConcesionarioAsier\Formulario\bin\Debug\DataLayer.pdb
+C:\PROYECTO FIN DE GRADO2013\Downloads\SolucionConcesionarioAsier\Formulario\bin\Debug\DomainModel.pdb
+C:\PROYECTO FIN DE GRADO2013\Downloads\SolucionConcesionarioAsier\Formulario\bin\Debug\Services.pdb
+C:\PROYECTO FIN DE GRADO2013\Downloads\SolucionConcesionarioAsier\Formulario\obj\Debug\Formulario.csprojResolveAssemblyReference.cache
+C:\PROYECTO FIN DE GRADO2013\Downloads\SolucionConcesionarioAsier\Formulario\obj\Debug\Formulario.ClienteAlta.resources
+C:\PROYECTO FIN DE GRADO2013\Downloads\SolucionConcesionarioAsier\Formulario\obj\Debug\Formulario.Inicio.resources
+C:\PROYECTO FIN DE GRADO2013\Downloads\SolucionConcesionarioAsier\Formulario\obj\Debug\Formulario.Properties.Resources.resources
+C:\PROYECTO FIN DE GRADO2013\Downloads\SolucionConcesionarioAsier\Formulario\obj\Debug\Formulario.csproj.GenerateResource.Cache
+C:\PROYECTO FIN DE GRADO2013\Downloads\SolucionConcesionarioAsier\Formulario\obj\Debug\Formulario.exe
+C:\PROYECTO FIN DE GRADO2013\Downloads\SolucionConcesionarioAsier\Formulario\obj\Debug\Formulario.pdb
+C:\master TI\TEMARIO\2ª PARTE\Plataforma para el desarrollo de software\practicas\SolucionConcesionarioRaul\Formulario\bin\Debug\Formulario.exe.config
+C:\master TI\TEMARIO\2ª PARTE\Plataforma para el desarrollo de software\practicas\SolucionConcesionarioRaul\Formulario\obj\Debug\Formulario.exe
+C:\master TI\TEMARIO\2ª PARTE\Plataforma para el desarrollo de software\practicas\SolucionConcesionarioRaul\Formulario\obj\Debug\Formulario.pdb
+C:\Users\Raúl\Documents\GitHub\Concesionario\Formulario\bin\Debug\Formulario.exe.config
+C:\Users\Raúl\Documents\GitHub\Concesionario\Formulario\obj\Debug\Formulario.exe
+C:\Users\Raúl\Documents\GitHub\Concesionario\Formulario\obj\Debug\Formulario.pdb
