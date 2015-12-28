@@ -39,7 +39,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MyDbContext.cs" />
     <Compile Include="Presupuesto.cs" />
+    <Compile Include="UnitOfWork.cs" />
     <Compile Include="Vehiculo.cs" />
     <Compile Include="Cliente.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

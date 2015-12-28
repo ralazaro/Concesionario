@@ -8,12 +8,31 @@ namespace DomainModel
 {
     public class Cliente
     {
+        [key]
+        [DatabaseGenerated(DataBaseGeneratedOption.Identity)]
+        private int id{get;set;}
+
+        [Required]
+        private string nombre { get; set; }
+
+        private string apellidos { get; set; }
+
+        private string telefono { get; set; }
+
+        private bool vip { get; set; }
+
+        private virtual ICollection<Presupuesto> presupuestos { get; set; }
+
+         /* 
         private int id;
         private string nombre;
         private string apellidos;
         private string telefono;
         private bool vip;
         private ICollection<Presupuesto> presupuestos;
+        */
+
+
 
         public Cliente(int id, string nombre, string apellidos, string telefono, bool vip)
         {
@@ -24,7 +43,7 @@ namespace DomainModel
             this.vip = vip;
             this.presupuestos = new HashSet<Presupuesto>();
         }
-
+        /*
         public int Id
         {
             get
@@ -93,5 +112,6 @@ namespace DomainModel
                 this.presupuestos = value;
             }
         }
+        */
     }
 }
