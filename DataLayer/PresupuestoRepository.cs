@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Contracts;
 using System.Data.SqlClient;
+using DomainModel;
+using Services;
 
 namespace DataLayer
 {
@@ -26,8 +28,8 @@ namespace DataLayer
                     cmd.CommandText = "INSERT INTO dbo.Presupuestos ( estado, importe, clienteId, vehiculoId) VALUES (@estado, @importe,@clienteId,@vehiculoId);select @@IDENTITY";
                     cmd.Parameters.AddWithValue(@"estado", presupuesto.Estado);
                     cmd.Parameters.AddWithValue(@"importe", presupuesto.Importe);
-                    cmd.Parameters.AddWithValue(@"clienteId", presupuesto.IdCliente);
-                    cmd.Parameters.AddWithValue(@"vehiculoId", presupuesto.IdVehiculo);
+                    cmd.Parameters.AddWithValue(@"clienteId", presupuesto.Cliente.Id );
+                    cmd.Parameters.AddWithValue(@"vehiculoId", presupuesto.Vehiculo.Id);
                     presupuesto.Id = Convert.ToInt32(cmd.ExecuteScalar());
                     //cmd.ExecuteNonQuery();
                     cerrarConexion();
@@ -56,8 +58,8 @@ namespace DataLayer
                     cmd.CommandText = "UPDATE dbo.Presupuestos set estado = @estado, importe=@importe,clienteId=@clienteId,vehiculoId=@vehiculoId where id=@id";
                     cmd.Parameters.AddWithValue(@"estado", presupuesto.Estado);
                     cmd.Parameters.AddWithValue(@"importe", presupuesto.Importe);
-                    cmd.Parameters.AddWithValue(@"clienteId", presupuesto.IdCliente);
-                    cmd.Parameters.AddWithValue(@"vehiculoId", presupuesto.IdVehiculo);
+                    cmd.Parameters.AddWithValue(@"clienteId", presupuesto.Cliente.Id);
+                    cmd.Parameters.AddWithValue(@"vehiculoId", presupuesto.Vehiculo.Id);
                     cmd.Parameters.AddWithValue(@"id", presupuesto.Id);
                     cmd.ExecuteNonQuery();
                     modificado = presupuesto;
@@ -119,7 +121,16 @@ namespace DataLayer
 
                     while (rdr.Read())
                     {
-                        nuevo = new DomainModel.Presupuesto((int)rdr[0], (string)rdr[1], (double)rdr[2], (int)rdr[3], (int)rdr[4]);
+                        //deberia buscar el cliente y el vehiculo
+                        Contracts.IClienteRepository repositorioCliente = new DataLayer.ClienteRepository();
+                        Services.ClienteService servicioCliente = new Services.ClienteService(repositorioCliente);
+                        Contracts.IVehiculoRepository repositorioVehiculo = new DataLayer.VehiculoRepository();
+                        Services.VehiculoService servicioVehiculo = new Services.VehiculoService(repositorioVehiculo);
+
+                        DomainModel.Cliente miCliente = servicioCliente.buscarCliente((int)rdr[3]);
+                        DomainModel.Vehiculo miVehiculo = servicioVehiculo.buscarVehiculo((int)rdr[4]);
+
+                        nuevo = new DomainModel.Presupuesto((int)rdr[0], (string)rdr[1], (decimal)rdr[2], miCliente, miVehiculo);
                     }
                     cerrarConexion();
                 }
@@ -155,7 +166,17 @@ namespace DataLayer
 
                 while (rdr.Read())
                 {
-                    DomainModel.Presupuesto nuevo = new DomainModel.Presupuesto((int)rdr[0], (string)rdr[1], (double)rdr[2], (int)rdr[3], (int)rdr[4]);
+                    //deberia buscar el cliente y el vehiculo
+                    Contracts.IClienteRepository repositorioCliente = new DataLayer.ClienteRepository();
+                    Services.ClienteService servicioCliente = new Services.ClienteService(repositorioCliente);
+                    Contracts.IVehiculoRepository repositorioVehiculo = new DataLayer.VehiculoRepository();
+                    Services.VehiculoService servicioVehiculo = new Services.VehiculoService(repositorioVehiculo);
+
+                    DomainModel.Cliente miCliente = servicioCliente.buscarCliente((int)rdr[3]);
+                    DomainModel.Vehiculo miVehiculo = servicioVehiculo.buscarVehiculo((int)rdr[4]);
+
+
+                    DomainModel.Presupuesto nuevo = new DomainModel.Presupuesto((int)rdr[0], (string)rdr[1], (decimal)rdr[2], miCliente, miVehiculo);
                     listado.Add(nuevo);
                 }
                 cerrarConexion();

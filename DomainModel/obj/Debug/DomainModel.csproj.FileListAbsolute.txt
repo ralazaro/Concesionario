@@ -13,3 +13,13 @@ C:\PROYECTO FIN DE GRADO2013\Downloads\SolucionConcesionarioAsier\DomainModel\bi
 C:\PROYECTO FIN DE GRADO2013\Downloads\SolucionConcesionarioAsier\DomainModel\obj\Debug\DomainModel.csprojResolveAssemblyReference.cache
 C:\PROYECTO FIN DE GRADO2013\Downloads\SolucionConcesionarioAsier\DomainModel\obj\Debug\DomainModel.dll
 C:\PROYECTO FIN DE GRADO2013\Downloads\SolucionConcesionarioAsier\DomainModel\obj\Debug\DomainModel.pdb
+C:\Users\Raúl\Documents\GitHub\Concesionario\DomainModel\obj\Debug\DomainModel.csprojResolveAssemblyReference.cache
+C:\Users\Raúl\Documents\GitHub\Concesionario\DomainModel\obj\Debug\DomainModel.dll
+C:\Users\Raúl\Documents\GitHub\Concesionario\DomainModel\obj\Debug\DomainModel.pdb
+C:\Users\Raúl\Documents\GitHub\Concesionario\DomainModel\bin\Debug\DomainModel.dll.config
+C:\Users\Raúl\Documents\GitHub\Concesionario\DomainModel\bin\Debug\DomainModel.dll
+C:\Users\Raúl\Documents\GitHub\Concesionario\DomainModel\bin\Debug\DomainModel.pdb
+C:\Users\Raúl\Documents\GitHub\Concesionario\DomainModel\bin\Debug\EntityFramework.dll
+C:\Users\Raúl\Documents\GitHub\Concesionario\DomainModel\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Raúl\Documents\GitHub\Concesionario\DomainModel\bin\Debug\EntityFramework.xml
+C:\Users\Raúl\Documents\GitHub\Concesionario\DomainModel\bin\Debug\EntityFramework.SqlServer.xml

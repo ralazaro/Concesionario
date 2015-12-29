@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DomainModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,15 +15,15 @@ namespace Services
             this.repositorio = repository;
         }
 
-        public DomainModel.Presupuesto altaPresupuesto(int id, string estado, double importe, int idCliente, int idVehiculo)
+        public DomainModel.Presupuesto altaPresupuesto(int id, string estado, decimal importe, Cliente cliente, Vehiculo vehiculo)
         {
-            DomainModel.Presupuesto nuevo = new DomainModel.Presupuesto(id, estado, importe, idCliente, idVehiculo);
+            DomainModel.Presupuesto nuevo = new DomainModel.Presupuesto(id, estado, importe, cliente, vehiculo);
             repositorio.insert(nuevo);
             return nuevo;   
         }
-        public DomainModel.Presupuesto modificarPresupuesto(int id, string estado, double importe, int idCliente, int idVehiculo)
+        public DomainModel.Presupuesto modificarPresupuesto(int id, string estado, decimal importe, Cliente cliente, Vehiculo vehiculo)
         {
-            DomainModel.Presupuesto modificar = new DomainModel.Presupuesto(id, estado, importe, idCliente, idVehiculo);
+            DomainModel.Presupuesto modificar = new DomainModel.Presupuesto(id, estado, importe, cliente, vehiculo);
             return repositorio.update(modificar);
         }
         public void borrarPresupuesto(int id)

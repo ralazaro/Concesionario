@@ -25,3 +25,19 @@ C:\PROYECTO FIN DE GRADO2013\Downloads\SolucionConcesionarioAsier\DataLayer\bin\
 C:\PROYECTO FIN DE GRADO2013\Downloads\SolucionConcesionarioAsier\DataLayer\obj\Debug\Repositories.csprojResolveAssemblyReference.cache
 C:\PROYECTO FIN DE GRADO2013\Downloads\SolucionConcesionarioAsier\DataLayer\obj\Debug\DataLayer.dll
 C:\PROYECTO FIN DE GRADO2013\Downloads\SolucionConcesionarioAsier\DataLayer\obj\Debug\DataLayer.pdb
+C:\Users\Raúl\Documents\GitHub\Concesionario\DataLayer\obj\Debug\Repositories.csprojResolveAssemblyReference.cache
+C:\Users\Raúl\Documents\GitHub\Concesionario\DataLayer\obj\Debug\DataLayer.dll
+C:\Users\Raúl\Documents\GitHub\Concesionario\DataLayer\obj\Debug\DataLayer.pdb
+C:\Users\Raúl\Documents\GitHub\Concesionario\DataLayer\bin\Debug\DataLayer.dll.config
+C:\Users\Raúl\Documents\GitHub\Concesionario\DataLayer\bin\Debug\DataLayer.dll
+C:\Users\Raúl\Documents\GitHub\Concesionario\DataLayer\bin\Debug\DataLayer.pdb
+C:\Users\Raúl\Documents\GitHub\Concesionario\DataLayer\bin\Debug\Contracts.dll
+C:\Users\Raúl\Documents\GitHub\Concesionario\DataLayer\bin\Debug\DomainModel.dll
+C:\Users\Raúl\Documents\GitHub\Concesionario\DataLayer\bin\Debug\EntityFramework.dll
+C:\Users\Raúl\Documents\GitHub\Concesionario\DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Raúl\Documents\GitHub\Concesionario\DataLayer\bin\Debug\Contracts.pdb
+C:\Users\Raúl\Documents\GitHub\Concesionario\DataLayer\bin\Debug\DomainModel.pdb
+C:\Users\Raúl\Documents\GitHub\Concesionario\DataLayer\bin\Debug\EntityFramework.xml
+C:\Users\Raúl\Documents\GitHub\Concesionario\DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Raúl\Documents\GitHub\Concesionario\DataLayer\bin\Debug\Services.dll
+C:\Users\Raúl\Documents\GitHub\Concesionario\DataLayer\bin\Debug\Services.pdb

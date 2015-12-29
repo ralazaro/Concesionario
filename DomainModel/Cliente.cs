@@ -3,25 +3,41 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DomainModel
 {
     public class Cliente
     {
-        [key]
-        [DatabaseGenerated(DataBaseGeneratedOption.Identity)]
-        private int id{get;set;}
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id{get;set;}
 
         [Required]
-        private string nombre { get; set; }
+        public string Nombre { get; set; }
 
-        private string apellidos { get; set; }
+        public string Apellidos { get; set; }
 
-        private string telefono { get; set; }
+        public string Telefono { get; set; }
 
-        private bool vip { get; set; }
+        public bool Vip { get; set; }
 
-        private virtual ICollection<Presupuesto> presupuestos { get; set; }
+        public virtual ICollection<Presupuesto> Presupuestos { get; set; }
+
+        public Cliente(){
+
+        }
+
+        public Cliente(int id,string nombre, string apellidos, string telefono, bool vip)
+        {
+            this.Id = id;
+            this.Nombre = nombre;
+            this.Apellidos = apellidos;
+            this.Telefono = telefono;
+            this.Vip = vip;
+            this.Presupuestos = new HashSet<Presupuesto>();
+        }
 
          /* 
         private int id;
@@ -30,9 +46,6 @@ namespace DomainModel
         private string telefono;
         private bool vip;
         private ICollection<Presupuesto> presupuestos;
-        */
-
-
 
         public Cliente(int id, string nombre, string apellidos, string telefono, bool vip)
         {
@@ -43,7 +56,7 @@ namespace DomainModel
             this.vip = vip;
             this.presupuestos = new HashSet<Presupuesto>();
         }
-        /*
+  
         public int Id
         {
             get

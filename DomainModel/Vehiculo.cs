@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,26 +10,42 @@ namespace DomainModel
 {
     public class Vehiculo
     {
-        [key]
-        [DatabaseGenerated(DataBaseGeneratedOption.Identity)]
-        private int id{get;set;}
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id{get;set;}
 
         [Required]
-        private string marca { get; set; }
+        public string Marca { get; set; }
 
-        private string modelo { get; set; }
+        public string Modelo { get; set; }
 
-        private int potencia { get; set; }
+        public int Potencia { get; set; }
+
+        public ICollection<Presupuesto> Presupuestos;
+
+        public Vehiculo()
+        {
+
+        }
 
 
-        private virtual ICollection<Presupuesto> presupuestos;
+        public Vehiculo(int id, string marca, string modelo, int potencia)
+        {
+            this.Id = id;
+            this.Marca = marca;
+            this.Modelo = modelo;
+            this.Potencia = potencia;
+            this.Presupuestos = new HashSet<Presupuesto>();
+        }
+
+
         /*
         private int id;
         private string marca;
         private string modelo;
         private int potencia;
         private ICollection<Presupuesto> presupuestos;
-        */
+        
         public Vehiculo(int id, string marca, string modelo, int potencia)
         {
             this.id = id;
@@ -36,7 +54,7 @@ namespace DomainModel
             this.potencia = potencia;
             this.presupuestos = new HashSet<Presupuesto>();
         }
-        /*
+        
         public int Id
         {
             get

@@ -19,3 +19,12 @@ C:\PROYECTO FIN DE GRADO2013\Downloads\SolucionConcesionarioAsier\Contracts\bin\
 C:\PROYECTO FIN DE GRADO2013\Downloads\SolucionConcesionarioAsier\Contracts\obj\Debug\Contracts.csprojResolveAssemblyReference.cache
 C:\PROYECTO FIN DE GRADO2013\Downloads\SolucionConcesionarioAsier\Contracts\obj\Debug\Contracts.dll
 C:\PROYECTO FIN DE GRADO2013\Downloads\SolucionConcesionarioAsier\Contracts\obj\Debug\Contracts.pdb
+C:\Users\Raúl\Documents\GitHub\Concesionario\Contracts\bin\Debug\Contracts.dll
+C:\Users\Raúl\Documents\GitHub\Concesionario\Contracts\bin\Debug\Contracts.pdb
+C:\Users\Raúl\Documents\GitHub\Concesionario\Contracts\bin\Debug\DomainModel.dll
+C:\Users\Raúl\Documents\GitHub\Concesionario\Contracts\bin\Debug\EntityFramework.dll
+C:\Users\Raúl\Documents\GitHub\Concesionario\Contracts\bin\Debug\DomainModel.pdb
+C:\Users\Raúl\Documents\GitHub\Concesionario\Contracts\bin\Debug\EntityFramework.xml
+C:\Users\Raúl\Documents\GitHub\Concesionario\Contracts\obj\Debug\Contracts.csprojResolveAssemblyReference.cache
+C:\Users\Raúl\Documents\GitHub\Concesionario\Contracts\obj\Debug\Contracts.dll
+C:\Users\Raúl\Documents\GitHub\Concesionario\Contracts\obj\Debug\Contracts.pdb

@@ -47,7 +47,8 @@ namespace Formulario
             Console.WriteLine("el listado de presupuesto del cliente con id "+nuevo2.Id+ " son:");
             foreach (DomainModel.Presupuesto presupuesto in listadoPresupuestoCliente)
             {
-                Console.WriteLine(presupuesto.Id + "," + presupuesto.Id + "," + presupuesto.Importe + "," + presupuesto.IdCliente + "," + presupuesto.IdVehiculo);
+                //Console.WriteLine(presupuesto.Id + "," + presupuesto.Id + "," + presupuesto.Importe + "," + presupuesto.IdCliente + "," + presupuesto.IdVehiculo);
+                Console.WriteLine(presupuesto.Id + "," + presupuesto.Id + "," + presupuesto.Importe + "," + presupuesto.Cliente.Id + "," + presupuesto.Vehiculo.Id);
             }
 
             //buscamos el cliente nuevo.Id
@@ -105,7 +106,7 @@ namespace Formulario
             Console.WriteLine("el listado de presupuesto del Vehiculo con id " + nuevo2.Id + " son:");
             foreach (DomainModel.Presupuesto presupuesto in listadoPresupuestoVehiculo)
             {
-                Console.WriteLine(presupuesto.Id + "," + presupuesto.Id + "," + presupuesto.Importe + "," + presupuesto.IdVehiculo + "," + presupuesto.IdVehiculo);
+                Console.WriteLine(presupuesto.Id + "," + presupuesto.Id + "," + presupuesto.Importe + "," + presupuesto.Cliente.Id + "," + presupuesto.Vehiculo.Id);
             }
 
             //buscamos el Vehiculo nuevo.Id
@@ -126,17 +127,28 @@ namespace Formulario
         {
             Contracts.IPresupuestoRepository repositorio = new DataLayer.PresupuestoRepository();
             Services.PresupuestoService servicio = new Services.PresupuestoService(repositorio);
+
+            Contracts.IClienteRepository repositorioCliente = new DataLayer.ClienteRepository();
+            Services.ClienteService servicioCliente = new Services.ClienteService(repositorioCliente);
+            Contracts.IVehiculoRepository repositorioVehiculo = new DataLayer.VehiculoRepository();
+            Services.VehiculoService servicioVehiculo = new Services.VehiculoService(repositorioVehiculo);
+
+            DomainModel.Cliente miCliente = servicioCliente.buscarCliente(28);
+            DomainModel.Vehiculo miVehiculo = servicioVehiculo.buscarVehiculo(10);
+            
+
             //Creamos un nuevo Presupuesto con el constructor
-            DomainModel.Presupuesto nuevo = new DomainModel.Presupuesto(1, "terminado", 100, 28, 10);
+            //DomainModel.Presupuesto nuevo = new DomainModel.Presupuesto(1, "terminado", 100, 28, 10);
+            DomainModel.Presupuesto nuevo = new DomainModel.Presupuesto(1, "terminado", 100, miCliente, miVehiculo);
             //int id, string estado, double importe, int idCliente, int idVehiculo
             //Damos de alta un nuevo Presupuesto con el constructor creado
-            nuevo = servicio.altaPresupuesto(nuevo.Id, nuevo.Estado, nuevo.Importe, nuevo.IdCliente, nuevo.IdVehiculo);
+            nuevo = servicio.altaPresupuesto(nuevo.Id, nuevo.Estado, nuevo.Importe, miCliente, miVehiculo);
             //Console.WriteLine("Damos de alta a primer Presupuesto:" + nuevo.Id+", Raul, Lazaro Lopez,123456789, true");
-            Console.WriteLine("Damos de alta el primer Presupuesto:" + nuevo.Id + "," + nuevo.Estado + "," + nuevo.Importe + "," + nuevo.IdCliente + "," + nuevo.IdVehiculo);
+            Console.WriteLine("Damos de alta el primer Presupuesto:" + nuevo.Id + "," + nuevo.Estado + "," + nuevo.Importe + "," + nuevo.Cliente.Id + "," + nuevo.Vehiculo.Id);
             //Damos de alta a otro Presupuesto directamente
-            DomainModel.Presupuesto nuevo2 = servicio.altaPresupuesto(2, "empezado", 200, 28, 10);
+            DomainModel.Presupuesto nuevo2 = servicio.altaPresupuesto(2, "empezado", 200, miCliente, miVehiculo);
             //Console.WriteLine("Damos de alta a segundo Presupuesto:" + nuevo2.Id + ",Paula,Lazaro Casado,987654321,false");
-            Console.WriteLine("Damos de alta el segundo Presupuesto:" + nuevo2.Id + "," + nuevo2.Estado + "," + nuevo2.Importe + "," + nuevo2.IdCliente + "," + nuevo2.IdVehiculo);
+            Console.WriteLine("Damos de alta el segundo Presupuesto:" + nuevo2.Id + "," + nuevo2.Estado + "," + nuevo2.Importe + "," + nuevo2.Cliente.Id + "," + nuevo2.Vehiculo.Id);
 
             //listo todos los Presupuestos
             ICollection<DomainModel.Presupuesto> listadoPresupuestos = new List<DomainModel.Presupuesto>();
@@ -144,18 +156,18 @@ namespace Formulario
             Console.WriteLine("el listado de Presupuestos totales son:");
             foreach (DomainModel.Presupuesto Presupuesto in listadoPresupuestos)
             {
-                Console.WriteLine(Presupuesto.Id + "," + Presupuesto.Estado + "," + Presupuesto.Importe + "," + Presupuesto.IdCliente + "," + Presupuesto.IdVehiculo);                
+                Console.WriteLine(Presupuesto.Id + "," + Presupuesto.Estado + "," + Presupuesto.Importe + "," + Presupuesto.Cliente.Id + "," + Presupuesto.Vehiculo.Id);                
             }
 
 
             //buscamos el Presupuesto nuevo.Id
             Console.WriteLine("Buscamos el Presupuesto con Id=" + nuevo.Id);
             DomainModel.Presupuesto miPresupuesto = servicio.buscarPresupuesto(nuevo.Id);
-            Console.WriteLine("El Presupuesto encontrado con Id=" + miPresupuesto.Id + " es: " + miPresupuesto.Id + "," + miPresupuesto.Estado + "," + miPresupuesto.Importe + "," + miPresupuesto.IdCliente + "," + miPresupuesto.IdVehiculo);
+            Console.WriteLine("El Presupuesto encontrado con Id=" + miPresupuesto.Id + " es: " + miPresupuesto.Id + "," + miPresupuesto.Estado + "," + miPresupuesto.Importe + "," + miPresupuesto.Cliente.Id + "," + miPresupuesto.Vehiculo.Id);
 
             //modificamos el Presupuesto nuevo2.Id
-            DomainModel.Presupuesto miPresupuestoModificado = servicio.modificarPresupuesto(nuevo2.Id, "empezado", 300, 28, 10);
-            Console.WriteLine("El Presupuesto modificado con Id=" + miPresupuestoModificado.Id + " es: " + miPresupuestoModificado.Id + "," + miPresupuestoModificado.Estado + "," + miPresupuestoModificado.Importe + "," + miPresupuestoModificado.IdCliente + "," + miPresupuestoModificado.IdVehiculo);
+            DomainModel.Presupuesto miPresupuestoModificado = servicio.modificarPresupuesto(nuevo2.Id, "empezado", 300, miPresupuesto.Cliente, miPresupuesto.Vehiculo);
+            Console.WriteLine("El Presupuesto modificado con Id=" + miPresupuestoModificado.Id + " es: " + miPresupuestoModificado.Id + "," + miPresupuestoModificado.Estado + "," + miPresupuestoModificado.Importe + "," + miPresupuestoModificado.Cliente.Id + "," + miPresupuestoModificado.Vehiculo.Id);
 
             //borramos el Presupuesto modificado
             servicio.borrarPresupuesto(miPresupuestoModificado.Id);

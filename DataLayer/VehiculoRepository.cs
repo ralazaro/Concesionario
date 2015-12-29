@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Contracts;
 using System.Data.SqlClient;
+using DomainModel;
 
 namespace DataLayer
 {
@@ -195,7 +196,7 @@ namespace DataLayer
                     
                     while (rdr.Read())
                     {
-                        DomainModel.Presupuesto nuevo = new DomainModel.Presupuesto((int)rdr[0], (string)rdr[1], (double)rdr[2], (int)rdr[3], (int)rdr[4]);
+                        DomainModel.Presupuesto nuevo = new DomainModel.Presupuesto((int)rdr[0], (string)rdr[1], (decimal)rdr[2], (Cliente)rdr[3], (Vehiculo)rdr[4]);
                         listado.Add(nuevo);
                     }
                     cerrarConexion();

@@ -1,4 +1,7 @@
-﻿using System.Collections.Generic;
+﻿//using DomainModel;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.Entity;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -8,10 +11,10 @@ namespace DataLayer
          where TEntity : class
     {
 
-        private readonly MyDbContext context;
+        private readonly CodeFirstContexto context;
         private readonly DbSet<TEntity> dbSet;
 
-        public GenericRepository(MyDbContext context)
+        public GenericRepository(CodeFirstContexto context)
         {
             this.context = context;
             this.dbSet = context.Set<TEntity>();
@@ -38,11 +41,11 @@ namespace DataLayer
         public void Update(TEntity entity)
         {
             dbSet.Attach(entity);
-            context.Entry(entity).State = EntityState.Modified;
+            context.Entry(entity).State = System.Data.Entity.EntityState.Modified;
         }
         public void Delete(TEntity entity)
         {
-            if (context.Entry(entity).State == EntityState.Detached)
+            if (context.Entry(entity).State == System.Data.Entity.EntityState.Detached)
             {
                 dbSet.Attach(entity);
             }

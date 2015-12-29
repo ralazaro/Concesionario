@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,6 +9,30 @@ namespace DomainModel
 {
     public class Presupuesto
     {
+        [Key]
+        public int Id;
+        public string Estado { get; set; }
+        public decimal Importe { get; set; }
+        [Required]
+        public Cliente Cliente { get; set; }
+        [Required]
+        public Vehiculo Vehiculo { get; set; }
+
+        public Presupuesto()
+        {
+
+        }
+
+        public Presupuesto(int id, string estado, decimal importe, Cliente cliente, Vehiculo vehiculo)
+        {
+            this.Id = id;
+            this.Estado = estado;
+            this.Importe = importe;
+            this.Cliente = cliente;
+            this.Vehiculo = vehiculo;
+        }
+
+        /*
         private int id;
         private string estado;
         private double importe;
@@ -79,5 +104,6 @@ namespace DomainModel
                 this.idVehiculo = value;
             }
         }
+        */
     }
 }
