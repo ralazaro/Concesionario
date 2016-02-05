@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace DataLayer
 {
     public class CodeFirstContexto : DbContext
-    {
+    { 
         public CodeFirstContexto() : base(nameOrConnectionString: "Data Source=RulesMan;Initial Catalog=Concesionario;Integrated Security=True") { 
         
         }

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace DomainModel
 {
     public class MyDbContext : DbContext
-    {
+    { 
         public MyDbContext() : base(nameOrConnectionString: "Data Source=RulesMan;Initial Catalog=Concesionario;Integrated Security=True") { }
 
         public DbSet<Cliente> Clientes { get; set; }

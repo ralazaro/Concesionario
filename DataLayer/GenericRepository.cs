@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataLayer
 {
-    public class GenericRepository<TEntity>
-         where TEntity : class
+    public class GenericRepository<TEntity> where TEntity : class
     {
 
         private readonly CodeFirstContexto context;
