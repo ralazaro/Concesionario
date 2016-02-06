@@ -74,3 +74,4 @@ C:\Users\Raúl\Documents\GitHub\Concesionario\Formulario\bin\Debug\DataLayer.pdb
 C:\Users\Raúl\Documents\GitHub\Concesionario\Formulario\bin\Debug\DomainModel.pdb
 C:\Users\Raúl\Documents\GitHub\Concesionario\Formulario\bin\Debug\Services.pdb
 C:\Users\Raúl\Documents\GitHub\Concesionario\Formulario\bin\Debug\EntityFramework.xml
+C:\Users\Raúl\Documents\GitHub\Concesionario\Formulario\obj\Debug\Formulario.ClienteNuevo.resources

@@ -1,6 +1,6 @@
 ﻿namespace Formulario
 {
-    partial class ClienteAlta
+    partial class ClienteNuevo
     {
         /// <summary>
         /// Required designer variable.
@@ -101,7 +101,7 @@
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             // 
-            // ClienteAlta
+            // ClienteNuevo
             // 
             this.ClientSize = new System.Drawing.Size(372, 280);
             this.Controls.Add(this.btnCancelar);
@@ -112,7 +112,7 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Name = "ClienteAlta";
+            this.Name = "ClienteNuevo";
             this.ResumeLayout(false);
             this.PerformLayout();
 

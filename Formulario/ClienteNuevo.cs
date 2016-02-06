@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Formulario
 {
-    public partial class ClienteAlta : Form
+    public partial class ClienteNuevo : Form
     {
-        public ClienteAlta()
+        public ClienteNuevo()
         {
             InitializeComponent();
 
